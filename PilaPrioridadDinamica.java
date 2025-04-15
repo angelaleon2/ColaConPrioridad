@@ -6,26 +6,7 @@ public class PilaPrioridadDinamica implements Pila{
 
 
     @Override
-   /* public void apilar(String nombre, int prioridad) {
-        Paciente elPaciente = new Paciente(nombre, prioridad);
-        NodoPaciente nuevoNodo = new NodoPaciente(elPaciente);
 
-        // Si la pila está vacía o el nuevo tiene mayor prioridad que el tope, se coloca en el tope
-        if (tope == null) {
-            tope = nuevoNodo;
-            return;
-        }
-
-        // Buscar dónde insertar el nuevo nodo
-        NodoPaciente actual = tope;
-        while (actual.siguiente != null && actual.siguiente.paciente.getPrioridad() < prioridad) {
-            actual = actual.siguiente;
-        }
-        nuevoNodo.siguiente = actual;
-        actual.siguiente = nuevoNodo;
-        System.out.println("El nodo ingresado es: "+nuevoNodo.paciente.toString());
-
-    }*/
     public void apilar(String nombre, int prioridad) {
         Paciente elPaciente = new Paciente(nombre, prioridad);
         NodoPaciente nuevoNodo = new NodoPaciente(elPaciente);
